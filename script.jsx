@@ -58,6 +58,7 @@
 // }
 
 
+
 // let startButton = document.getElementById('start');
 // startButton.addEventListener('click', () => stopwatch.start());
 
@@ -66,16 +67,10 @@
 
 class Counter extends React.Component {
     render() {
-        return {
-            elementName: 'div',
-            attributes: {},
-            children: [' Counter ']
-        };
+        return <div> Counter </div>
     }
 }
 
-ReactDOM.render({
-    elementName: 'Counter',
-    attributes: {},
-    children: null
-}, document.getElementById('app'));
+
+
+ReactDOM.render(<Counter/>, document.getElementById('app'));

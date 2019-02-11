@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "babel script.js --watch --out-file script-compiled.js"
+        "start": "babel script.jsx --watch --out-file script-compiled.js"
     },
     "repository": {
         "type": "git",
@@ -19,11 +19,16 @@
     "homepage": "https://github.com/BarbaraMak85/stoper#readme",
     "devDependencies": {
         "babel-cli": "^6.26.0",
-        "babel-preset-latest": "^6.24.1"
+        "babel-plugin-syntax-async-generators": "^6.13.0",
+        "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+        "babel-plugin-transform-jsx": "^2.0.0"
     },
-
     "babel": {
-        "presets": ["latest"]
-
+        "presets": [
+            "latest"
+        ]
+    },
+    "dependencies": {
+        "babel-standalone": "^6.26.0"
     }
 }
